@@ -99,9 +99,6 @@ WSGI_APPLICATION = 'alx_travel_app.wsgi.application'
 #     }
 # }
 
-print("DATABASE URL:", env.db('DATABASE_LINK'))
-print("SECTET:",env('SECRET_KEY') )
-
 DATABASES = {
     'default': env.db('DATABASE_LINK')  # This will automatically parse the database URL from the .env
 }
